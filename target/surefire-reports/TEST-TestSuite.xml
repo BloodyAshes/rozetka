@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="7.629" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="8.953" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
-    <property name="sun.java.command" value="C:\Temp\surefire4327106479230861440\surefirebooter132518729125524984.jar C:\Temp\surefire4327106479230861440 2022-07-03T17-03-36_366-jvmRun1 surefire1968398952760563465tmp surefire_0994765571622332105tmp"/>
+    <property name="sun.java.command" value="C:\Temp\surefire2532455954420618505\surefirebooter5999052712761125726.jar C:\Temp\surefire2532455954420618505 2022-07-03T18-49-27_889-jvmRun1 surefire747103368459094011tmp surefire_01649844949123529276tmp"/>
     <property name="surefire.test.class.path" value="E:\Prog\Zakupka\target\test-classes;E:\Prog\Zakupka\target\classes;C:\Users\Bloody Ashes\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Bloody Ashes\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Bloody Ashes\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Bloody Ashes\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Bloody Ashes\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Bloody Ashes\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Bloody Ashes\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Bloody Ashes\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Bloody Ashes\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Bloody Ashes\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Bloody Ashes\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Bloody Ashes\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Bloody Ashes\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Bloody Ashes\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Bloody Ashes\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Bloody Ashes\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Bloody Ashes\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Bloody Ashes\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Bloody Ashes\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Bloody Ashes\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Bloody Ashes\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Bloody Ashes\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Bloody Ashes\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Bloody Ashes\.m2\repository\io\github\bonigarcia\webdrivermanager\5.0.3\webdrivermanager-5.0.3.jar;C:\Users\Bloody Ashes\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\Bloody Ashes\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar;C:\Users\Bloody Ashes\.m2\repository\org\jsoup\jsoup\1.14.2\jsoup-1.14.2.jar;C:\Users\Bloody Ashes\.m2\repository\com\github\docker-java\docker-java\3.2.12\docker-java-3.2.12.jar;C:\Users\Bloody Ashes\.m2\repository\com\github\docker-java\docker-java-core\3.2.12\docker-java-core-3.2.12.jar;C:\Users\Bloody Ashes\.m2\repository\com\github\docker-java\docker-java-api\3.2.12\docker-java-api-3.2.12.jar;C:\Users\Bloody Ashes\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\Bloody Ashes\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Bloody Ashes\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\Bloody Ashes\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\Bloody Ashes\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\Bloody Ashes\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\Bloody Ashes\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Bloody Ashes\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.12\docker-java-transport-httpclient5-3.2.12.jar;C:\Users\Bloody Ashes\.m2\repository\com\github\docker-java\docker-java-transport\3.2.12\docker-java-transport-3.2.12.jar;C:\Users\Bloody Ashes\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\Bloody Ashes\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\Bloody Ashes\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\Bloody Ashes\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Bloody Ashes\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Bloody Ashes\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Bloody Ashes\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Bloody Ashes\.m2\repository\io\qameta\allure\allure-testng\2.18.1\allure-testng-2.18.1.jar;C:\Users\Bloody Ashes\.m2\repository\io\qameta\allure\allure-java-commons\2.18.1\allure-java-commons-2.18.1.jar;C:\Users\Bloody Ashes\.m2\repository\io\qameta\allure\allure-model\2.18.1\allure-model-2.18.1.jar;C:\Users\Bloody Ashes\.m2\repository\io\qameta\allure\allure-test-filter\2.18.1\allure-test-filter-2.18.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="allure.results.directory" value="target/allure-results"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Temp\surefire4327106479230861440\surefirebooter132518729125524984.jar"/>
+    <property name="surefire.real.class.path" value="C:\Temp\surefire2532455954420618505\surefirebooter5999052712761125726.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -63,19 +63,20 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="verifySuccessfulCustomerRegistration" classname="tests.registration.RegistrationTests" time="0.042">
+  <testcase name="verifySuccessfulCustomerRegistration" classname="tests.registration.RegistrationTests" time="1.103">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1656857019254	geckodriver	INFO	Listening on 127.0.0.1:1739
-1656857019903	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Temp\\rust_mozprofileiNK0lh"
-1656857020287	Marionette	INFO	Marionette enabled
-1656857020294	Marionette	INFO	Listening on port 59561
-Read port: 59561
-1656857020649	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Temp\\rust_mozprofileiNK0lh\\search.json.mozlz4", (void 0)))
-июл 03, 2022 5:03:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+1656863370779	geckodriver	INFO	Listening on 127.0.0.1:17403
+1656863371409	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Temp\\rust_mozprofileZftgAc"
+1656863371815	Marionette	INFO	Marionette enabled
+1656863371821	Marionette	INFO	Listening on port 63642
+Read port: 63642
+1656863372138	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Temp\\rust_mozprofileZftgAc\\search.json.mozlz4", (void 0)))
+июл 03, 2022 6:49:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://rozetka.com.ua"
 ]]></system-err>
   </testcase>
 </testsuite>

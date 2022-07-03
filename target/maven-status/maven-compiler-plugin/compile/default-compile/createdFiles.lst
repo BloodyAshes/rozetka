@@ -1,5 +1,7 @@
 constants\Constants$Urls.class
+pageObject\base\enums\Language.class
 driver\WebDriverFactory$1.class
+pageObject\base\BasePage$1.class
 pageObject\base\BasePage.class
 constants\Constants$TimeoutVariable.class
 constants\Constants.class
