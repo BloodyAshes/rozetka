@@ -8,7 +8,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import pageObject.base.BasePage;
-import pageObject.zakupka.CatalogMainPage;
+import pageObject.rozetka.CatalogMainPage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -17,13 +17,13 @@ import static constants.Constants.TimeoutVariable.IMPLICIT_WAIT;
 import static constants.Constants.TimeoutVariable.PAGE_LOAD_WAIT;
 
 public class BaseTest {
-protected WebDriver driver = WebDriverFactory.initDriver(Browsers.FIREFOX);
-protected BasePage basePage = new BasePage(driver);
-protected CatalogMainPage catalogMainPage = new CatalogMainPage(driver);
+
+    protected WebDriver driver = null;
 
 
     @BeforeSuite
     public void setUp(){
+        driver = WebDriverFactory.initDriver(Browsers.FIREFOX);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_WAIT, TimeUnit.SECONDS);
@@ -46,5 +46,9 @@ public void clearCookiesAndLocalStorage(){
         driver.quit();
     }
 }
+
+    public void open(String url){
+        driver.navigate().to(url);
+    }
 
 }
