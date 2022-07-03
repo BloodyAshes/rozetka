@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Zakupka</artifactId>
+    <artifactId>Rozetka</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -32,7 +32,7 @@
                     <suiteXmlFiles>
                         <!--suppress UnresolvedMavenProperty-->
                         <!--<suiteXmlFile>${basedir}${TEST_SUITE}.xml</suiteXmlFile>-->
-                       <!--       <suiteXmlFile>${basedir}src/main/java/xmlSuites/Smartphones.xml</suiteXmlFile>-->
+                              <suiteXmlFile>${basedir}/src/main/java/xmlSuites/RegistrationTests.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <systemProperties>
                         <property>
