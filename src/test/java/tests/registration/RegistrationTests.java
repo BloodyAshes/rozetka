@@ -17,12 +17,13 @@ public class RegistrationTests extends BaseTest{
     public void beforeMethod(){
     open(ROZETKA_PAGE);
         catalogMainPage = new CatalogMainPage(driver);
+        catalogMainPage.changeLanguage(Language.RU);
     }
 
 
     @Test
     public void verifySuccessfulCustomerRegistration(){
-        catalogMainPage.changeLanguage(Language.UA);
+        catalogMainPage.openRegistrationForm();
     }
 
 }
