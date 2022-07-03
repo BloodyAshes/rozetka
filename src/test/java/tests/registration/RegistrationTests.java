@@ -2,6 +2,7 @@ package tests.registration;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import pageObject.base.enums.Language;
 import pageObject.rozetka.CatalogMainPage;
 import tests.base.BaseTest;
 
@@ -21,6 +22,7 @@ public class RegistrationTests extends BaseTest{
 
     @Test
     public void verifySuccessfulCustomerRegistration(){
+        catalogMainPage.changeLanguage(Language.UA);
     }
 
 }
