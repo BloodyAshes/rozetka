@@ -1,5 +1,6 @@
-package tests.baseTest;
+package tests.base;
 
+import driver.Browsers;
 import driver.WebDriverFactory;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -16,10 +17,17 @@ import static constants.Constants.TimeoutVariable.IMPLICIT_WAIT;
 import static constants.Constants.TimeoutVariable.PAGE_LOAD_WAIT;
 
 public class BaseTest {
-protected WebDriver driver = WebDriverFactory.initDriver();
+protected WebDriver driver = WebDriverFactory.initDriver(Browsers.FIREFOX);
 protected BasePage basePage = new BasePage(driver);
 protected CatalogMainPage catalogMainPage = new CatalogMainPage(driver);
 
+
+    @BeforeSuite
+    public void setUp(){
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_WAIT, TimeUnit.SECONDS);
+    }
 
 @AfterTest
 public void clearCookiesAndLocalStorage(){
@@ -31,12 +39,6 @@ public void clearCookiesAndLocalStorage(){
     }
 }
 
-@BeforeSuite
-    public void setUp(){
-    driver.manage().window().maximize();
-    driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
-    driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_WAIT, TimeUnit.SECONDS);
-}
 
 @AfterSuite(alwaysRun = true)
     public void afterSuite(){
@@ -44,7 +46,5 @@ public void clearCookiesAndLocalStorage(){
         driver.quit();
     }
 }
-
-
 
 }
