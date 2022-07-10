@@ -44,7 +44,8 @@ public class RegistrationTests extends BaseTest{
         return new Object[][]{
                 {Alphabets.EN_ALPHABET.getAlphabet()},
                 {Alphabets.NUMBERS.getAlphabet()},
-                {Alphabets.SPECIAL_SYMBOLS.getAlphabet()}
+                {Alphabets.SPECIAL_SYMBOLS.getAlphabet()},
+                {" "}
         };
     }
 
@@ -53,6 +54,14 @@ public class RegistrationTests extends BaseTest{
     public void checkValidationForFirstNameInput(String symbolsSet){
         catalogMainPage.openRegistrationForm()
                 .fillFirstName(randomGenerator(RandomGenerator.FIRST_NAME, 5, symbolsSet));
+        Assert.assertNotNull(catalogMainPage.getValidationError());
+    }
+
+    @Description(value = "Verify that the last name input validation is working")
+    @Test(dataProvider = "validation")
+    public void checkValidationForLastNameInput(String symbolsSet){
+        catalogMainPage.openRegistrationForm()
+                .fillLastName(randomGenerator(RandomGenerator.SECOND_NAME, 6, symbolsSet));
         Assert.assertNotNull(catalogMainPage.getValidationError());
     }
 

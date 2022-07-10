@@ -96,7 +96,7 @@ public class CatalogMainPage extends BasePage {
                 .fillLastName(randomGenerator(RandomGenerator.SECOND_NAME, 5, Alphabets.RU_ALPHABET.getAlphabet()))
                 .fillPhoneNumber(randomGenerator(RandomGenerator.PHONE_NUMBER, 7, Alphabets.NUMBERS.getAlphabet()))
                 .fillEmail(randomGenerator(RandomGenerator.EMAIL, 8, Alphabets.EN_AND_NUMBERS.getAlphabet()))
-                .fillPassword(randomGenerator(RandomGenerator.PASSWORD, 16, Alphabets.EN_AND_NUMBERS.getAlphabet()))
+                .fillPassword(randomGenerator(RandomGenerator.PASSWORD, 16, Alphabets.EN_AND_NUMBERS.getAlphabet().toUpperCase()))
                 .pressSubmitButton();
         return this;
     }
