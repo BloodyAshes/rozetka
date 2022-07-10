@@ -1,5 +1,6 @@
 package pageObject.rozetka;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,20 +36,25 @@ public class CatalogMainPage extends BasePage {
     @FindBy(css = ".auth-modal__submit")
     private WebElement submitButton;
 
+
+    @Step("Method opens authForm window")
     public CatalogMainPage openAuthForm(){
         userProfile.click();
         return this;
     }
 
+    @Step("Method opens registration form window")
     public CatalogMainPage openRegistrationForm(){
         userProfile.click();
         waitElementIsVisible(registrationButton).click();
         return this;
     }
 
+    @Step("Used for filling first name input")
     public CatalogMainPage fillFirstName(String first){
         firstName.sendKeys(first);
         return this;
     }
+
 
 }
