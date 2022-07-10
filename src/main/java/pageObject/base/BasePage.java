@@ -9,9 +9,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pageObject.base.enums.Alphabets;
 import pageObject.base.enums.Language;
 import pageObject.base.enums.RandomGenerator;
 
+
+import java.security.SecureRandom;
 
 import static constants.Constants.TimeoutVariable.EXPLICIT_WAIT;
 
@@ -23,6 +26,9 @@ public class BasePage {
 
     @FindBy(css = "a.lang__link")
     private WebElement inActiveLanguage;
+
+    @FindBy(xpath = "//h1")
+    private WebElement titleOfPage;
 
     public BasePage(WebDriver driver){
         this.driver = driver;
@@ -53,23 +59,39 @@ public class BasePage {
     }
 
     @Step("Generated random data for registration form")
-    public static String randomGenerator(RandomGenerator option, int symbols) {
+    public static String randomGenerator(RandomGenerator option, int symbols, String alphabet) {
         String random = "";
         switch (option) {
             case FIRST_NAME:
-            case SECOND_NAME: {
-                return random = RandomStringUtils.randomAlphabetic(symbols);
+            case SECOND_NAME:
+            case PASSWORD:{
+                return random = getRandomWord(symbols, alphabet);
             }
             case EMAIL: {
-                return random = RandomStringUtils.randomAlphanumeric(symbols) + "@gmail.com";
-            }
-            case PASSWORD: {
-                return random = RandomStringUtils.randomAlphanumeric(symbols);
+                return random = getRandomWord(symbols, alphabet) + "@gmail.com";
             }
             case PHONE_NUMBER: {
-                return random = "96" + RandomStringUtils.randomNumeric(symbols);
+                return random = "96" + getRandomWord(symbols, alphabet);
             }
         }
         return null;
+    }
+
+    @Step("Method is used for generate random string")
+    public static String getRandomWord(int length, String alphabet) {
+        StringBuilder sb = new StringBuilder(Math.max(length, 16));
+        SecureRandom RND = new SecureRandom();
+        for (int i = 0; i < length; i++) {
+            int len = alphabet.length();
+            int random = RND.nextInt(len);
+            char c = alphabet.charAt(random);
+            sb.append(c);
+        }
+        return sb.toString();
+    }
+
+    @Step("Get current page's title")
+    public String getTitle(){
+        return titleOfPage.getText();
     }
 }
