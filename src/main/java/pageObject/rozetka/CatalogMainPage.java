@@ -38,6 +38,9 @@ public class CatalogMainPage extends BasePage {
     @FindBy(css = ".auth-modal__submit")
     private WebElement submitButton;
 
+    @FindBy(css = ".validation-message.ng-star-inserted")
+    private WebElement validationError;
+
 
     @Step("Method opens authForm window")
     public CatalogMainPage openAuthForm(){
@@ -96,6 +99,11 @@ public class CatalogMainPage extends BasePage {
                 .fillPassword(randomGenerator(RandomGenerator.PASSWORD, 16, Alphabets.EN_AND_NUMBERS.getAlphabet()))
                 .pressSubmitButton();
         return this;
+    }
+
+    @Step("Used for getting text from validation error")
+    public String getValidationError(){
+        return validationError.getText();
     }
 
 }

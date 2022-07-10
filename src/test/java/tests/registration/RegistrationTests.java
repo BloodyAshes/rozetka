@@ -4,7 +4,9 @@ import io.qameta.allure.Description;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import pageObject.base.enums.Alphabets;
 import pageObject.base.enums.Language;
 import pageObject.base.enums.RandomGenerator;
 import pageObject.rozetka.CatalogMainPage;
@@ -33,6 +35,25 @@ public class RegistrationTests extends BaseTest{
         catalogMainPage.openRegistrationForm()
                 .fillRegistrationFormWithValidValues();
         Assert.assertEquals(catalogMainPage.getTitle(), "Подтверждение номера телефона");
+    }
+
+
+
+    @DataProvider(name = "validation")
+    public Object[][] validation(){
+        return new Object[][]{
+                {Alphabets.EN_ALPHABET.getAlphabet()},
+                {Alphabets.NUMBERS.getAlphabet()},
+                {Alphabets.SPECIAL_SYMBOLS.getAlphabet()}
+        };
+    }
+
+    @Description(value = "Verify that the first name input validation is working")
+    @Test(dataProvider = "validation")
+    public void checkValidationForFirstNameInput(String symbolsSet){
+        catalogMainPage.openRegistrationForm()
+                .fillFirstName(randomGenerator(RandomGenerator.FIRST_NAME, 5, symbolsSet));
+        Assert.assertNotNull(catalogMainPage.getValidationError());
     }
 
 }

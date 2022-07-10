@@ -4,7 +4,8 @@ public enum Alphabets {
     RU_ALPHABET ("абвгдеёжзийклмнопрстуфхцчшщьъыэюя"),
     EN_ALPHABET("abcdefghijklmnopqrstuvwxyz"),
     NUMBERS ("0123456789"),
-    EN_AND_NUMBERS ("AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789");
+    EN_AND_NUMBERS ("AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789"),
+    SPECIAL_SYMBOLS ("!@#$%^&*()_+=");
 
     private String alphabet;
 
