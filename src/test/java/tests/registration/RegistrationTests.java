@@ -1,5 +1,6 @@
 package tests.registration;
 
+import io.qameta.allure.Description;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pageObject.base.enums.Language;
@@ -22,7 +23,7 @@ public class RegistrationTests extends BaseTest{
         catalogMainPage.changeLanguage(Language.RU);
     }
 
-
+    @Description(value = "Test to verify that user can be able to create a new account")
     @Test
     public void verifySuccessfulCustomerRegistration(){
         catalogMainPage.openRegistrationForm()

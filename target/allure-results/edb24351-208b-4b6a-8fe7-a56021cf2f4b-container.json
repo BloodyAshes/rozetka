@@ -1,1 +1,0 @@
-{"uuid":"edb24351-208b-4b6a-8fe7-a56021cf2f4b","name":"RegistrationTests","children":["ad67cd68-b71b-48af-9df7-69e957b53720"],"befores":[],"afters":[{"name":"clearCookiesAndLocalStorage","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1656863376100,"stop":1656863376139}],"start":1656863373482,"stop":1656863376158}

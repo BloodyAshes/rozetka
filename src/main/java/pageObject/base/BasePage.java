@@ -1,5 +1,6 @@
 package pageObject.base;
 
+import io.qameta.allure.Step;
 import org.apache.commons.lang.RandomStringUtils;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -33,6 +34,7 @@ public class BasePage {
         return element;
     }
 
+    @Step("The method is used for changing site language")
     public void changeLanguage(Language lang){
         switch (lang){
             case RU:{
@@ -50,6 +52,7 @@ public class BasePage {
         }
     }
 
+    @Step("Generated random data for registration form")
     public static String randomGenerator(RandomGenerator option, int symbols) {
         String random = "";
         switch (option) {
