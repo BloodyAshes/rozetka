@@ -1,0 +1,1 @@
+{"uuid":"8207b526-cfc2-4b84-bf64-56941c8296ab","name":"Zakupka","children":["7ce93f3b-00ad-42b5-a139-f1aa623967e9"],"befores":[],"afters":[{"name":"clearCookiesAndLocalStorage","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1657442768114,"stop":1657442768140}],"start":1657442762894,"stop":1657442768140}
