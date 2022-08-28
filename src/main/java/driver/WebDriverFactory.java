@@ -10,13 +10,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebDriverFactory {
 
-static String browserForJenkins = System.getenv("BROWSER");
 
     public static WebDriver initDriver(Browsers browser) {
-        ChromeOptions chromeOptions = new  ChromeOptions();
-        if (browserForJenkins != null) {
-            chromeOptions.getCapability(browserForJenkins);
-        }else {
             switch (browser) {
                 case EDGE: {
                     WebDriverManager.edgedriver().setup();
@@ -31,7 +26,6 @@ static String browserForJenkins = System.getenv("BROWSER");
                     return new FirefoxDriver();
                 }
             }
-        }
         return null;
     }
 
