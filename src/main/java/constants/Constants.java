@@ -16,6 +16,7 @@ public class Constants {
 
     public static class Urls{
         public static final String ROZETKA_PAGE = "https://rozetka.com.ua/";
+        public static final String HOST_URL = "http://localhost:4444/wd/hub/";
 
     }
 }
