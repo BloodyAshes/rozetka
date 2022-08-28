@@ -23,7 +23,7 @@ public class BaseTest {
 
     @BeforeSuite
     public void setUp(){
-        driver = WebDriverFactory.initDriver(Browsers.FIREFOX);
+        driver = WebDriverFactory.initDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_WAIT, TimeUnit.SECONDS);
